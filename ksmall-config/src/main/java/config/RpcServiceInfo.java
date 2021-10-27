@@ -14,10 +14,16 @@ public class RpcServiceInfo {
 
     private Integer version;
 
-    public RpcServiceInfo(String serviceName, String serviceInfo, Integer version) {
+    private String host;
+
+    private int port;
+
+    public RpcServiceInfo(String serviceName, String serviceInfo, Integer version, String host, int port) {
         this.serviceName = serviceName;
         this.serviceInfo = serviceInfo;
         this.version = version;
+        this.host = host;
+        this.port = port;
     }
 
     public String getServiceName() {
@@ -42,5 +48,21 @@ public class RpcServiceInfo {
 
     public void setVersion(Integer version) {
         this.version = version;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 }

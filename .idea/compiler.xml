@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ksmall-registry" />
         <module name="ksmall-config" />
+        <module name="ksmall-registry" />
         <module name="ksmall-common" />
       </profile>
     </annotationProcessing>
